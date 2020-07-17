@@ -1,0 +1,428 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html {
+   scroll-behavior: smooth;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+header {
+  height: 100%;
+  position: relative;
+/*   overflow: hidden; */
+  background: url(https://i.ibb.co/XCGCCPR/rob-lambert-9-Q-p-LLP-jm-A-unsplash-1.jpg) center no-repeat;
+  /* Image Credit: Unsplash.me */
+  background-size: cover;
+}
+header .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
+header hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background:#333 center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;  -webkit-filter: blur(4px);
+}
+img{
+  margin-right:20px
+}
+.section-top, .section-bottom {
+  width: 100%;
+  height: 50vh;
+}
+.section-top {
+  	background-image: url("https://i.ibb.co/pzr8qNP/jakub-skafiriak-Alj-Dai-Cb-CVY-unsplash.jpg");
+	 background-size: cover;
+	height:40vh;
+ 
+}
+.section-bottom {
+    background: linear-gradient(90deg, #ebebeb 50%, #fff 50%);
+	height:60vh;
+}
+
+
+// .site {
+//   padding: 20em 0;
+//   text-align: center;
+//   background-color: #efefef;
+//   font-size: .8em;
+//   color: #444;
+//   position:relative
+// }
+// .site a {
+//   color: #666;
+//   text-decoration: none;
+// }
+// .site a:hover {
+//   color: #222;
+// }
+
+// .site nav{
+//   position:absolute;
+//   top:0;
+//   left:0;
+//   background:#222;
+//   width:100%
+// }
+// .site nav a{
+//   padding:10px 30px;
+//   font-size:1.3em;
+//   display:inline-block
+// }
+// .site nav a:hover{
+//   background:#333;
+//   color:#fff
+// }
+
+//sidenav
+/* The navigation bar */
+.navbar {
+	z-index: 10000;
+	justify-content:space-around;
+  background-color: #fff;
+	display:flex;
+	align-items: center;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+	font-size:18px;
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 15px 16px;
+	font-weight:700;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+section {
+	display: inline-block;
+	width: 100%;
+	height: 100vh;
+
+}
+h1 {
+	font-weight: bold;
+	position: center;
+	font-size: 80%;
+}
+p {
+	font-size: 14px;
+}
+li {
+	font-size: 12px;
+}
+#all {
+  display: grid;
+  place-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  border-top: 5px solid #ee9a03;
+  transition-delay: 0.35s
+  #desc {
+    transition-delay: 30s;
+  }
+}
+
+
+html body [data-ca3_iconfont="ETmodules"]::before {
+    font-family: "ETmodules";
+}
+[data-ca3_icon]::before {
+    font-weight: normal;
+    content: attr(data-ca3_icon);
+}
+
+.ca3-scroll-down-arrow {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 80px;
+	margin: 0px 0 0 -40px;
+	line-height: 60px;
+	position: absolute;
+	left: 50%;
+	bottom: 0px;
+	color: #FFF;
+	text-align: center;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+#gallery{
+	height: auto;
+	 
+  align-items: center;
+  justify-content: center;
+}
+.gallery {
+	 background-image: url("https://i.ibb.co/Q82RJ0M/bharath-g-s-a-LGi-PJ4-XRO4-unsplash.jpg");
+	background-size: cover;
+	 // display: flex;
+	 display: flex;
+	align-items: center;
+  justify-content: center;
+	 padding: 2px;
+	 transition: 0.3s;
+
+}
+ .gallery:hover .gallery__image {
+	 filter: grayscale(1);
+}
+ .gallery__column {
+	 display: flex;
+	 flex-direction: column;
+	 border: 2px solid #000;
+  height: 600px;
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px #333;
+}
+ .gallery__link {
+	 margin: 15px;
+	 overflow: hidden;
+}
+ .gallery__link:hover .gallery__image {
+	 filter: grayscale(0);
+}
+ .gallery__link:hover .gallery__caption {
+	 opacity: 1;
+}
+ .gallery__thumb {
+	 position: relative;
+}
+ .gallery__image {
+	 display: block;
+	 width: 100%;
+	 transition: 0.3s;
+}
+ .gallery__image:hover {
+	 transform: scale(1.1);
+}
+ .gallery__caption {
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 padding: 25px 15px 15px;
+	 width: 100%;
+	 font-family: 'Raleway', sans-serif;
+	 font-size: 16px;
+	 color: white;
+	 opacity: 0;
+	 background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255, 255, 0) 100%);
+	 transition: 0.3s;
+}
+
+.patentInfo {
+	 background-image: url("https://i.ibb.co/x3qGs59/josh-rose-tr-Yl7-JYATH0-unsplash.jpg");
+	background-size: cover;
+}
+
+
+
+
+// Variables
+$color_grey: #BFBFBF;
+$color_green: #B3D23F;
+$color_dark: #1A1A1A;
+$color_light: #FAFAFA;
+$color_background: #2D3235;
+$default_timer: 987ms;
+
+// Resets
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+
+// Let's write some real CSS??
+.button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  &:hover {
+    & .button__border-circle { 
+      transform: translateX(60px);
+    }
+    
+    & .button__mask-circle {
+      clip-path: circle(25px at 85px);
+    }
+  }
+}
+
+.button__text {
+  z-index: 1;
+  font-size: 14px;
+  margin-right: -18px;
+  color: $color_light;
+  letter-spacing: 0.05em;
+}
+
+.button__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.button__arrow {
+  left: 35px;
+  height: 3px;
+  width: 50px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background-color: $color_green;
+  
+  &:after {
+    content: '';
+    width: 0; 
+    height: 0; 
+    top: -5px;
+    right: -7px;
+    position: absolute;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid $color_green;
+  }
+}
+.patentInfo {
+  font-family: Roboto;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color_background;
+}
+.button__border-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid $color_grey;
+  transition: transform $default_timer;
+}
+
+.button__mask-circle {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(25px);
+  transition: clip-path $default_timer;
+}
+
+.button__small-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transform: translateX(60px);
+  background-color: $color_green;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+	text-size: 10em;
+  }
